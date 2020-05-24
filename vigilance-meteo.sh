@@ -20,8 +20,6 @@ VigilanceImport() {
 python3 << END
 import vigilancemeteo
 zone = vigilancemeteo.DepartmentWeatherAlert("$DEPARTEMENT")
-zone.department_color
-zone.additional_info_URL
 print(zone.summary_message('text'))
 END
 }
